@@ -93,7 +93,6 @@ public class Hero : MonoBehaviour {
     }
 
     public void OnTriggerEnter2D(Collider2D other) {
-        
         if (other.tag == "Award") {
             audio.Play();
             Award award = other.GetComponent<Award>();
@@ -106,6 +105,9 @@ public class Hero : MonoBehaviour {
                 Destroy(award.gameObject);
              
             }
+        } else if (other.tag == "Enemy") {
+            Destroy(this.gameObject);
+            GameOver.instance.Show(GameManager._instance.score);
         }
     }
     
