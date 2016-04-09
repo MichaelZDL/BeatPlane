@@ -1,0 +1,106 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &135100
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 435100}
+  - 212: {fileID: 21235100}
+  - 114: {fileID: 11435100}
+  - 61: {fileID: 6178604}
+  m_Layer: 0
+  m_Name: enemy2
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &435100
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 135100}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 3.08999991, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!61 &6178604
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 135100}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: 1.64999998, y: 2.46000004}
+  m_Center: {x: 0, y: 0}
+--- !u!114 &11435100
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 135100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 854583c313b786b46bacf4ffd85a1fb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 15
+  speed: 1
+  score: 1500
+  enemyType: 0
+  isDeath: 0
+  framePerSecond: 10
+  sprites:
+  - {fileID: 21300000, guid: 9888a56656b1b13478ad5172c4aa2acd, type: 3}
+  - {fileID: 21300000, guid: bdda5034b7d510f42a6ebc5d3f40d6e8, type: 3}
+  - {fileID: 21300000, guid: 16dbeed7a501c3d43bbd40789e725721, type: 3}
+  - {fileID: 21300000, guid: fd0a91f19715a4f4f9a6297332b3e797, type: 3}
+  - {fileID: 21300000, guid: a81135fd320261040a774ccc06c82e53, type: 3}
+  - {fileID: 21300000, guid: cc01ffa649fba4548a73fef136aec7d7, type: 3}
+  hitSprite: {fileID: 21300000, guid: 50faa59215eb9254b839f7ceb73a3a7d, type: 3}
+  hitTimer: .200000003
+  hitSprites:
+  - {fileID: 21300000, guid: a8cad3bd00c46474fb223583e4822134, type: 3}
+  - {fileID: 21300000, guid: 50faa59215eb9254b839f7ceb73a3a7d, type: 3}
+--- !u!212 &21235100
+SpriteRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 135100}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 2787901817
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: a8cad3bd00c46474fb223583e4822134, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 135100}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1
