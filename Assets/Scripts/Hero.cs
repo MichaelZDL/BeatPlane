@@ -43,7 +43,7 @@ public class Hero : MonoBehaviour {
             lastMousePosition = Vector3.zero;
         }
 
-        if (isMouseDown) {
+        if (isMouseDown&&GameManager._instance.gameState==GameState.Running) {
             if (lastMousePosition != Vector3.zero) {
                 //Camera.main.ScreenToWorldPoint(Input.mousePosition);
                 Vector3 offset = Camera.main.ScreenToWorldPoint(Input.mousePosition) - lastMousePosition;
@@ -93,7 +93,9 @@ public class Hero : MonoBehaviour {
     }
 
     public void OnTriggerEnter2D(Collider2D other) {
+        
         if (other.tag == "Award") {
+            audio.Play();
             Award award = other.GetComponent<Award>();
             if (award.type == 0) {
                 //chang to double guns

@@ -6,7 +6,7 @@ TagManager:
   - Enemy
   - Award
   - ScoreGUI
-  - 
+  - GUI
   - TextScore
   - 
   Builtin Layer 0: Default
