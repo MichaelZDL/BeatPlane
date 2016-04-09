@@ -57,6 +57,10 @@ public class Enemy : MonoBehaviour {
             }
         }
 
+        if (Input.GetKeyDown(KeyCode.Space) && BombManager.instance.count > 0) {
+            ToDie();
+        }
+
 
 
 
@@ -77,4 +81,5 @@ public class Enemy : MonoBehaviour {
             GameManager._instance.score += score;
         }
     }
+
 }

@@ -101,6 +101,10 @@ public class Hero : MonoBehaviour {
                 //chang to double guns
                 superGunTime = resetSupterGunTime;
                 Destroy(award.gameObject);
+            } else if (award.type == 1) {
+                BombManager.instance.AddBomb();
+                Destroy(award.gameObject);
+             
             }
         }
     }
