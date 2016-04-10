@@ -5,7 +5,7 @@ public class GamePause : MonoBehaviour {
 
     void OnMouseUpAsButton() {
         GameManager._instance.transformGameState();
-        audio.Play();
+        GetComponent<AudioSource>().Play();
     }
 	// Use this for initialization
 	void Start () {

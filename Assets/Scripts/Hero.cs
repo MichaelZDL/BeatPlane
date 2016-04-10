@@ -94,7 +94,7 @@ public class Hero : MonoBehaviour {
 
     public void OnTriggerEnter2D(Collider2D other) {
         if (other.tag == "Award") {
-            audio.Play();
+            GetComponent<AudioSource>().Play();
             Award award = other.GetComponent<Award>();
             if (award.type == 0) {
                 //chang to double guns

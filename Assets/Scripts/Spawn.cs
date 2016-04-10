@@ -52,13 +52,13 @@ public class Spawn : MonoBehaviour {
         float x = Random.Range(-2.1f, 2.1f);
         GameObject o = GameObject.Instantiate(awardType0Prefab, new Vector3(x, transform.position.y, transform.position.z), Quaternion.identity) as GameObject;
         o.transform.parent = Container.transform;
-        audio.Play();
+        GetComponent<AudioSource>().Play();
     }
 
     public void createawardType1() {
         float x = Random.Range(-2.1f, 2.1f);
         GameObject o = GameObject.Instantiate(awardType1Prefab, new Vector3(x, transform.position.y, transform.position.z), Quaternion.identity) as GameObject;
         o.transform.parent = Container.transform;
-        audio.Play();
+        GetComponent<AudioSource>().Play();
     }
 }
