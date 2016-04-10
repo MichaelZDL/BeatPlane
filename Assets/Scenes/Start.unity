@@ -100,13 +100,13 @@ RectTransform:
   m_GameObject: {fileID: 118652112}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: .912500024, y: .912500024, z: .912500024}
   m_Children: []
-  m_Father: {fileID: 231991570}
-  m_RootOrder: 3
+  m_Father: {fileID: 1603725981}
+  m_RootOrder: 4
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: 0, y: 63.9000015}
+  m_AnchoredPosition: {x: 219, y: 423.495789}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &118652114
@@ -333,8 +333,7 @@ RectTransform:
   m_Children:
   - {fileID: 225134659}
   - {fileID: 1557739423}
-  - {fileID: 961347763}
-  - {fileID: 118652113}
+  - {fileID: 1603725981}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_AnchorMin: {x: 0, y: 0}
@@ -1262,13 +1261,13 @@ RectTransform:
   m_GameObject: {fileID: 961347762}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: .912500024, y: .912500024, z: .912500024}
   m_Children: []
-  m_Father: {fileID: 231991570}
-  m_RootOrder: 2
+  m_Father: {fileID: 1603725981}
+  m_RootOrder: 3
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: 0, y: -247.699997}
+  m_AnchoredPosition: {x: 219, y: 139.160843}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &961347764
@@ -1478,14 +1477,16 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1603725980}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -.187055677, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -240, y: -400.204987, z: 0}
+  m_LocalScale: {x: 1.0958904, y: 1.0958904, z: 1.0958904}
   m_Children:
   - {fileID: 541054055}
   - {fileID: 2118744528}
   - {fileID: 724655697}
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
+  - {fileID: 961347763}
+  - {fileID: 118652113}
+  m_Father: {fileID: 231991570}
+  m_RootOrder: 2
 --- !u!114 &1603725982
 MonoBehaviour:
   m_ObjectHideFlags: 0

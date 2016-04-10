@@ -108,6 +108,7 @@ public class Hero : MonoBehaviour {
         } else if (other.tag == "Enemy") {
             Destroy(this.gameObject);
             GameOver.instance.Show(GameManager._instance.score);
+            BombManager.instance.gameObject.SetActive(false);
         }
     }
     

@@ -57,7 +57,7 @@ MonoBehaviour:
   score: 100
   enemyType: 0
   isDeath: 0
-  framePerSecond: 10
+  framePerSecond: 20
   sprites:
   - {fileID: 21300000, guid: 811d8dd73ccc26b45a7eec7af736c2f7, type: 3}
   - {fileID: 21300000, guid: 31a47b5240880d14d9ab458aa4fee386, type: 3}
